@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customer_login1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            app:srcCompat="@drawable/lottepng" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:fontFamily="@font/nanums"
+            android:gravity="center"
+            android:text="LOGIN"
+            android:textColor="#3EA99F"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="227dp"
+            android:layout_height="151dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="95dp"
+            app:srcCompat="@drawable/user_1" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp">
+
+        <TextView
+            android:id="@+id/txtID"
+            android:layout_width="120dp"
+            android:layout_height="52dp"
+            android:fontFamily="@font/nanums"
+            android:text="핸드폰 번호 :"
+            android:textColor="#4C4C4C"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="250dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:background="@drawable/black_radius"
+            android:ems="10"
+            android:fontFamily="@font/nanumsquare_acr"
+            android:gravity="center"
+            android:hint="EX) 010-1234-1234"
+            android:inputType="phone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="92dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:textColor="#4C4C4C"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/btnLogin"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/login_1" />
+    </LinearLayout>
+
+</LinearLayout>

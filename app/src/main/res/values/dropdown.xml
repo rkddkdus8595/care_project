@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="store">
+        <item >수도권1지역</item>
+        <item >수도권2지역</item>
+        <item >영호남지역</item>
+    </string-array>
+
+    <string-array name="nothing">
+    </string-array>
+
+    <string-array name="store1">
+        <item >전체</item>
+        <item >수도권1지역</item>
+        <item >수도권2지역</item>
+        <item >영호남지역</item>
+    </string-array>
+
+    <string-array name="customer">
+        <item >서울</item>
+        <item >수도권</item>
+        <item >지방</item>
+    </string-array>
+
+    <string-array name="customer2">
+        <item >전체</item>
+        <item >서울</item>
+        <item >수도권</item>
+        <item >지방</item>
+    </string-array>
+
+
+    <string-array name="seoulStore">
+        <item >본점</item>
+        <item >잠실점</item>
+        <item >캐슬플라자</item>
+        <item >영등포점</item>
+        <item >청량리점</item>
+        <item >강남점</item>
+        <item >노원점</item>
+        <item >미아점</item>
+        <item >관악점</item>
+        <item >건대스타시티점</item>
+        <item >김포공항점</item>
+    </string-array>
+
+    <string-array name="capitalStore">
+        <item >일산점</item>
+        <item >중동점</item>
+        <item >평촌점</item>
+        <item >안산점</item>
+        <item >분당점</item>
+        <item >구리점</item>
+        <item >수원점</item>
+        <item >인천터미널점</item>
+    </string-array>
+
+    <string-array name="provinceStore">
+        <item >부산본점</item>
+        <item >센텀시티점</item>
+        <item >동래점</item>
+        <item >울산점</item>
+        <item >창원점</item>
+        <item >대구점</item>
+        <item >상인점</item>
+        <item >포항점</item>
+        <item >광주점</item>
+        <item >전주점</item>
+        <item >대전점</item>
+        <item >마산점</item>
+    </string-array>
+</resources>

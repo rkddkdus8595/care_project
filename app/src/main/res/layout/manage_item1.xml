@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="63dp"
+    android:orientation="vertical">
+
+    <!-- 접수 내역 조회에 들어가게 될 아이템들 -->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="100dp"
+        android:layout_height="63dp"
+        android:fontFamily="@font/nanums"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:gravity="center"    />
+        <TextView
+            android:id="@+id/txtContent"
+            android:layout_width="130dp"
+            android:layout_height="63dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:fontFamily="@font/nanums"
+            android:gravity="center"   /> <!-- 한줄로 제한하고 그이상 넘어가면 말줄임표로 줄임 !!!! !-->
+        <TextView
+            android:id="@+id/txtProcess"
+            android:layout_width="80dp"
+            android:layout_height="63dp"
+            android:textSize="13dp"
+            android:fontFamily="@font/nanums"
+            android:textColor="#000000"
+            android:gravity="center"   />
+
+        <TextView
+            android:id="@+id/txtProcessT"
+            android:layout_width="96dp"
+            android:layout_height="63dp"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:fontFamily="@font/nanums"
+            android:gravity="center"   />
+    </LinearLayout>
+
+
+</LinearLayout>

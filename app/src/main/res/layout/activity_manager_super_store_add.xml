@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".manager_super_store_add">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#625D5D">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="370dp"
+            android:layout_height="70dp"
+            android:fontFamily="@font/nanums"
+            android:text="   지점 추가"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imgBtnMenu"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/menu_7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#728FCE">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/nanums"
+            android:gravity="center"
+            android:text="그룹명"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/storeSelect1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/store"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#728FCE"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/nanums"
+            android:gravity="center"
+            android:text="고객에게 보여질 그룹명"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/customer_store"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/customer"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#728FCE"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/nanums"
+            android:gravity="center"
+            android:text="지점 코드"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtStoreID"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:textSize="17dp"
+            android:hint="  대문자 1개 + 숫자 1개 입력해주세요 EX) A1 "
+            android:inputType="textPersonName"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#728FCE"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/nanums"
+            android:gravity="center"
+            android:text="지점 이름"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtStoreName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:textSize="17dp"
+            android:hint="   '~점' 의형태로 입력해주세요"
+            android:inputType="textPersonName"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0041C2"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/nanums"
+            android:gravity="center"
+            android:text="지점 관리 매니저 자동 추가 여부"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/rdoGroup"
+            android:layout_width="378dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rdoAuto"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:text="자동 추가"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rdoManual"
+                android:layout_width="195dp"
+                android:layout_height="match_parent"
+                android:text="수동 추가" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/nanums"
+            android:text="- 아이디"
+            android:textColor="#353535"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:textSize="17dp"/>
+
+        <EditText
+            android:id="@+id/edtID"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_circle"
+            app:backgroundTint="#E5E4E2"
+            android:ems="10"
+            android:textSize="17dp"
+            android:inputType="textPersonName"
+            android:visibility="invisible"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/nanums"
+            android:text="- 비밀번호"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#353535"
+            android:visibility="invisible"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/edtPasswd"
+            android:layout_width="263dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_circle"
+            android:ems="10"
+            android:textSize="17dp"
+            android:inputType="textPersonName"
+            android:visibility="invisible"
+            app:backgroundTint="#E5E4E2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btnCommit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="180dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/check_1" />
+
+    </LinearLayout>
+</LinearLayout>

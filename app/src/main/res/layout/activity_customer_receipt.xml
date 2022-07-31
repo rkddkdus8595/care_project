@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".manager_select_main"
+    android:background="#F0F8FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tab_layout">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전체"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="미처리" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="처리완료" />
+        </com.google.android.material.tabs.TabLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0041C2">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_marginLeft="130dp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:fontFamily="@font/nanums"
+            android:text="고객 접수 내역 조회"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/imgBtnMenu"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="70dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/menu_1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/storeSelect1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/customer2"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:background="#e3e3e3"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/storeSelect2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageButton
+            android:id="@+id/imgBtnCal1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/calendar_4" />
+        <EditText
+            android:id="@+id/edtCal1"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:background="@drawable/edit_circle"
+            app:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:fontFamily="@font/nanums"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:layout_gravity="center"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanums"
+            android:text="-"
+            android:textColor="#2B60DE"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="35dp" />
+
+        <ImageButton
+            android:id="@+id/imgBtnCal2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/calendar_4" />
+
+        <EditText
+            android:id="@+id/edtCal2"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:background="@drawable/edit_circle"
+            android:ems="10"
+            android:fontFamily="@font/nanums"
+            android:gravity="center"
+            app:backgroundTint="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:inputType="textPersonName"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="15dp" />
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle"
+            app:backgroundTint="#2B65EC"
+            android:fontFamily="@font/nanums"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:text="조회" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="접수일자"
+            android:textColor="#353535"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/nanums"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="117dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/nanums"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:text="접수내용"
+            android:textColor="#353535"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="92dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/nanums"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:text="처리현황"
+            android:textColor="#353535"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/nanums"
+            android:text="처리시간"
+            android:textColor="#353535"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="407dp"
+            android:layout_height="320dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btnPrevious"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/previous_1"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center" />
+        <TextView
+            android:id="@+id/txtCurrentPage"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:fontFamily="@font/nanums"
+            android:gravity="center"
+            android:textColor="#353535"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="20dp"
+            android:layout_height="70dp"
+            android:fontFamily="@font/nanums"
+            android:text="/"
+            android:gravity="center"
+            android:textColor="#353535"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtTotalPage"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:fontFamily="@font/nanums"
+            android:gravity="center"
+            android:textColor="#353535"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/next_1"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+</LinearLayout>

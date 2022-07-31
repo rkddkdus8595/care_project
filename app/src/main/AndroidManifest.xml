@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.care_project">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/new_icon"
+        android:label="L-CARE"
+        android:roundIcon="@mipmap/new_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Care_project"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".customer_detail_select" />
+        <activity android:name=".manager_super_store_add" />
+        <activity android:name=".manager_super_select_main" />
+        <activity android:name=".customer_receipt" />
+        <activity android:name=".customer_final_depth" />
+        <activity android:name=".customer_three_depth" />
+        <activity android:name=".customer_two_depth" />
+        <activity android:name=".customer_one_depth" />
+        <activity android:name=".three_depth_modify" />
+        <activity android:name=".three_depth_add" />
+        <activity android:name=".three_depth" />
+        <activity android:name=".two_depth_modify" />
+        <activity android:name=".two_depth_add" />
+        <activity android:name=".two_depth" />
+        <activity android:name=".one_depth_modify" />
+        <activity android:name=".one_depth_add" />
+        <activity android:name=".details_select" />
+        <activity android:name=".manager_select_main" />
+        <activity android:name=".manager_serivce" />
+        <activity android:name=".manager_login" />
+        <activity android:name=".customer_login1">
+
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>
